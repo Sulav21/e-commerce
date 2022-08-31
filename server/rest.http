@@ -1,0 +1,28 @@
+########## PRODUCT #################
+
+### post product
+POST http://localhost:8000/api/v1/products/
+Content-Type: application/json
+
+{    
+    "name":"product1",
+    "price":1200,
+    "description":"Sample product",
+    "category":"laptop",
+    "images":{
+        "public_id":"sample Image",
+        "url":"sample_url"
+    }
+}
+
+### get products
+GET http://localhost:8000/api/v1/products/
+
+
+### update products
+PUT http://localhost:8000/api/v1/products/update/
+Content-Type: application/json
+
+{
+    "name":"michael"
+}
